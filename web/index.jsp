@@ -16,7 +16,7 @@
                     <td><a href="emisora/index.jsp">Menú Emisora</a></td>
                 </tr>
                 <tr>
-                    <td><a href="">Menú Productora</a></td>
+                    <td><a href="productora/index.jsp">Menú Productora</a></td>
                 </tr>
                 <tr>
                     <td><a href="">Menú Consorcio</a></td>

@@ -4,27 +4,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Menú Emisoras</title>
+        <title>Menú Productoras</title>
     </head>
     <body>
         <center>
-            <h1><a href="../index.jsp"><input type="button" value="Volver"></a> Menú Emisoras</h1>
+            <h1><a href="../index.jsp"><input type="button" value="Volver"></a> Menú Productoras</h1>
             <hr>
 
-            <h1>Datos de Emisora</h1>
-            <form action="../SvEmisoras" method="POST">
+            <h1>Datos de Productora</h1>
+            <form action="../SvProductoras" method="POST">
                 <table>
                     <tr>
                         <th style="text-align: right"><label style="color: red;">*</label> Nombre:</th>
-                        <td><input type="text" name="nombre" required placeholder="Ingrese el Nombre"></td>
+                        <td><input type="text" name="nombre" required placeholder="Indique el Nombre"></td>
                     </tr>
                     <tr>
-                        <th style="text-align: right"><label style="color: red;">*</label> Frecuencia:</th>
-                        <td><input type="text" name="frec" required placeholder="Hz"></td>
+                        <th style="text-align: right"><label style="color: red;">*</label> RFC:</th>
+                        <td><input type="text" name="rfc" required placeholder="Indique el RFC"></td>
                     </tr>
                     <tr>
-                        <th style="text-align: right"><label style="color: red;">*</label> Transimisión:</th>
-                        <td><input type="text" name="trans" required placeholder="AM / FM" maxlength="2"></td>
+                        <th style="text-align: right"><label style="color: red;">*</label> Teléfono:</th>
+                        <td><input type="text" name="tel" required placeholder="Indique el número"></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;">
@@ -39,13 +39,13 @@
 
             <h1>Lista de Emisoras</h1>
             <p>Para ver la lista de usuarios, haga click en el siguiente botón</p>
-            <form action="../SvEmisoras" method="GET">
+            <form action="../SvProductoras" method="GET">
                 <button type="submit"> Mostrar Emisoras </button>
             </form>
             <br>
             <hr>
             
-            <h1>Eliminar Emisoras</h1>
+<!--            <h1>Eliminar Emisoras</h1>
             <p>Ingrese el Id de la Emisora a Eliminar</p>
             <form action="../SvEliminar" method="POST">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
@@ -59,7 +59,7 @@
             <form action="../SvEditar" method="GET">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Editar </button>
-            </form>
+            </form>-->
             <br>
             <hr>
         </center>

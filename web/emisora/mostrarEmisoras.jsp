@@ -9,7 +9,7 @@
         <title>Mostrar Emisoras</title>
     </head>
     <body>
-        <h1>Lista de Emisoras</h1>
+        <h1>Lista de Emisoras <a href="index.jsp"><input type="button" value="Volver"></a></h1>
         <%
             List<Emisora> listaEmisoras = (List) request.getSession().getAttribute("listaEmisoras");
             int cont = 1;

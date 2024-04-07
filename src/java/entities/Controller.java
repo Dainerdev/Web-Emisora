@@ -8,6 +8,7 @@ public class Controller {
 
     PersistenceController perCon = new PersistenceController();
     
+    // Controller para Emisora
     public void crearEmisora (Emisora emi){
         perCon.crearEmisora(emi);
     }
@@ -28,8 +29,14 @@ public class Controller {
         perCon.editarEmisora(emi);
     }
     
+    //Controller para Productora
+    public void crearProductora (Productora prod){
+        perCon.crearProductora(prod);
+    }
     
-    
+    public List<Productora> listarProductora(){
+        return perCon.listarProductora();
+    }
     
 }
 

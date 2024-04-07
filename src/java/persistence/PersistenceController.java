@@ -2,6 +2,7 @@
 package persistence;
 
 import entities.Emisora;
+import entities.Productora;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,6 +14,7 @@ public class PersistenceController {
     EmisoraJpaController emiJpa = new EmisoraJpaController();
     ProductoraJpaController produJpa = new ProductoraJpaController();
 
+    // PersistenceController Para Emisora
     // Create Emisora
     public void crearEmisora(Emisora emi) {
         emiJpa.create(emi);
@@ -44,6 +46,18 @@ public class PersistenceController {
             Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    // PersistenceController Para Productora
+    // Create Productora
+    public void crearProductora(Productora prod) {
+        produJpa.create(prod);
+    }
+    
+    // Read Productora
+    public List<Productora> listarProductora() {
+        return produJpa.findProductoraEntities();
+    }
+    
     
     
 }
