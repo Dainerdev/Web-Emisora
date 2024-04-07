@@ -7,6 +7,7 @@
     <class>entities.Emisora</class>
     <class>entities.Consorcio</class>
     <class>entities.ProgResumen</class>
+    <class>entities.Persona</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_web_emisoras?serverTimezone=UTC"/>

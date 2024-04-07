@@ -114,6 +114,31 @@ public class Controller {
         perCon.editarProgResumen(progRes);
     }
     
+    //Controller para Persona
+    public void crearPersona(Persona per) {
+        perCon.crearPersona(per);
+    }
+    
+    public List<Persona> listarPersona() {
+        return perCon.listarPersona();
+    }
+
+    public void eliminarPersona(int id) {
+        perCon.eliminarPersona(id);
+    }
+
+    public Persona buscarPersona(int id) {
+        return perCon.buscarPersona(id);
+    }
+
+    public void editarPersona(Persona per) {
+        perCon.editarPersona(per);
+    }
+
+    
+
+
+    
     
     
     

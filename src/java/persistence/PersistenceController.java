@@ -3,6 +3,7 @@ package persistence;
 
 import entities.Consorcio;
 import entities.Emisora;
+import entities.Persona;
 import entities.Productora;
 import entities.ProgResumen;
 import entities.Programa;
@@ -18,6 +19,7 @@ public class PersistenceController {
     ProductoraJpaController produJpa = new ProductoraJpaController();
     ProgramaJpaController progJpa = new ProgramaJpaController();
     ProgResumenJpaController resumJpa = new ProgResumenJpaController();
+    PersonaJpaController perJpa = new PersonaJpaController();
 
     // PersistenceController Para Emisora
     // Create Emisora
@@ -118,7 +120,7 @@ public class PersistenceController {
         }
     }
 
-    // PersistenceController Para Consorcio
+    // PersistenceController Para Programa
     
     public void crearPrograma(Programa prog) {
         progJpa.create(prog);
@@ -147,6 +149,8 @@ public class PersistenceController {
             Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    // PersistenceController Para Programa Resumen
 
     public void crearProgResumen(ProgResumen progResum) {
         resumJpa.create(progResum);
@@ -176,10 +180,34 @@ public class PersistenceController {
         }
     }
     
+    // PersistenceController Para Persona
+
+    public void crearPersona(Persona per) {
+        perJpa.create(per);
+    }
     
-    
-    
-    
-    
+    public List<Persona> listarPersona() {
+        return perJpa.findPersonaEntities();
+    }
+
+    public void eliminarPersona(int id) {
+        try {
+            perJpa.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public Persona buscarPersona(int id) {
+        return perJpa.findPersona(id);
+    }
+
+    public void editarPersona(Persona per) {
+        try {
+            perJpa.edit(per);
+        } catch (Exception ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
 }

@@ -27,6 +27,9 @@
                 <tr>
                     <td><a href="progResumen/index.jsp">Menú Programa Resumen</a></td>
                 </tr>
+                <tr>
+                    <td><a href="persona/index.jsp">Menú Persona</a></td>
+                </tr>
             </table>
         </center>
     </body>
