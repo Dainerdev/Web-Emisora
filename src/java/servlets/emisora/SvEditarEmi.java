@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet(name = "SvEditar", urlPatterns = {"/SvEditar"})
-public class SvEditar extends HttpServlet {
+@WebServlet(name = "SvEditarEmi", urlPatterns = {"/SvEditarEmi"})
+public class SvEditarEmi extends HttpServlet {
     
     Controller cont = new Controller();
 

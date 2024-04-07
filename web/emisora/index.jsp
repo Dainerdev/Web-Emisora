@@ -38,7 +38,7 @@
             <hr>
 
             <h1>Lista de Emisoras</h1>
-            <p>Para ver la lista de usuarios, haga click en el siguiente botón</p>
+            <p>Para ver la lista de Emisoras, haga click en el siguiente botón</p>
             <form action="../SvEmisoras" method="GET">
                 <button type="submit"> Mostrar Emisoras </button>
             </form>
@@ -47,7 +47,7 @@
             
             <h1>Eliminar Emisoras</h1>
             <p>Ingrese el Id de la Emisora a Eliminar</p>
-            <form action="../SvEliminar" method="POST">
+            <form action="../SvEliminarEmi" method="POST">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Eliminar </button>
             </form>
@@ -56,7 +56,7 @@
 
             <h1>Editar Emisoras</h1>
             <p>Ingrese el Id de la Emisora a Editar</p>
-            <form action="../SvEditar" method="GET">
+            <form action="../SvEditarEmi" method="GET">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Editar </button>
             </form>

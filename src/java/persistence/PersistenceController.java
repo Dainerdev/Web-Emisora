@@ -34,11 +34,12 @@ public class PersistenceController {
         }
     }
 
-    // Find para Edit
+    // Find para Edit Emisora
     public Emisora buscarEmisora(int id) {
         return emiJpa.findEmisora(id);
     }
-    // Edit
+    
+    // Edit Emisora
     public void editarEmisora(Emisora emi) {
         try {
             emiJpa.edit(emi);
@@ -56,6 +57,30 @@ public class PersistenceController {
     // Read Productora
     public List<Productora> listarProductora() {
         return produJpa.findProductoraEntities();
+    }
+    
+    // Delete Productora
+    public void eliminarProductora(int id) {
+        try {
+            produJpa.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    // Find para Edit Productora
+    public Productora buscarProductora(int id) {
+        return produJpa.findProductora(id);
+    }
+
+    // Edit Productora
+    public void editarProductora(Productora prod) {
+        try {
+            produJpa.edit(prod);
+        } catch (Exception ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+;
     }
     
     

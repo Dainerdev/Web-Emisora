@@ -37,29 +37,29 @@
             <br>
             <hr>
 
-            <h1>Lista de Emisoras</h1>
-            <p>Para ver la lista de usuarios, haga click en el siguiente botón</p>
+            <h1>Lista de Productoras</h1>
+            <p>Para ver la lista de Productora, haga click en el siguiente botón</p>
             <form action="../SvProductoras" method="GET">
-                <button type="submit"> Mostrar Emisoras </button>
+                <button type="submit"> Mostrar Productoras </button>
             </form>
             <br>
             <hr>
             
-<!--            <h1>Eliminar Emisoras</h1>
-            <p>Ingrese el Id de la Emisora a Eliminar</p>
-            <form action="../SvEliminar" method="POST">
+            <h1>Eliminar Productora</h1>
+            <p>Ingrese el Id de la Productora a Eliminar</p>
+            <form action="../SvEliminarProd" method="POST">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Eliminar </button>
             </form>
             <br>
             <hr>
 
-            <h1>Editar Emisoras</h1>
-            <p>Ingrese el Id de la Emisora a Editar</p>
-            <form action="../SvEditar" method="GET">
+            <h1>Editar Productoras</h1>
+            <p>Ingrese el Id de la Productora a Editar</p>
+            <form action="../SvEditarProd" method="GET">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Editar </button>
-            </form>-->
+            </form>
             <br>
             <hr>
         </center>

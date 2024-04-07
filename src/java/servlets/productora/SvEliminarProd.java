@@ -1,17 +1,16 @@
 
-package servlets.emisora;
+package servlets.productora;
 
 import entities.Controller;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "SvEliminar", urlPatterns = {"/SvEliminar"})
-public class SvEliminar extends HttpServlet {
+@WebServlet(name = "SvEliminarProd", urlPatterns = {"/SvEliminarProd"})
+public class SvEliminarProd extends HttpServlet {
     
     Controller cont = new Controller();
 
@@ -32,12 +31,12 @@ public class SvEliminar extends HttpServlet {
             throws ServletException, IOException {
         
         int id = Integer.parseInt(request.getParameter("id"));
-        cont.eliminarEmisora(id);
+        cont.eliminarProductora(id);
         
-        String msj = "Emisora " + id + " Eliminada Correctamente";
+        String msj = "Productora " + id + " Eliminada Correctamente";
         
         // Redireccionamiento a otra pagina JSP
-        response.sendRedirect("emisora/index.jsp?msj="+msj);
+        response.sendRedirect("productora/index.jsp?msj="+msj);
         
     }
 

@@ -37,6 +37,18 @@ public class Controller {
     public List<Productora> listarProductora(){
         return perCon.listarProductora();
     }
+
+    public void eliminarProductora(int id) {
+        perCon.eliminarProductora(id);
+    }
+
+    public Productora buscarProductora(int id) {
+        return perCon.buscarProductora(id);
+    }
+
+    public void editarProductora(Productora prod) {
+        perCon.editarProductora(prod);
+    }
     
 }
 

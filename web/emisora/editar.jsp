@@ -10,7 +10,7 @@
     <body>
         <% Emisora emi = (Emisora) request.getSession().getAttribute("emiEditar"); %>
         <h1>Datos de Emisora</h1>
-        <form action="../SvEditar" method="POST">
+        <form action="../SvEditarEmi" method="POST">
             <p><label>Nombre: </label> <input type="text" name="nombre" value="<%= emi.getNombre() %>"></p>
             <p><label>Frecuencia: </label> <input type="text" name="frec" value="<%= emi.getFrecuencia()%>"></p>
             <p><label>Transmisión: </label> <input type="text" name="trans" value="<%= emi.getTransmision()%>"></p>

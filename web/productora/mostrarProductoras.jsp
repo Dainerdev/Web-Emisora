@@ -15,7 +15,7 @@
             int cont = 1;
             for (Productora lp : listaProductoras) {
         %>
-                <p><b>Emisora N°<%= cont %></b></p>
+                <p><b>Productora N°<%= cont %></b></p>
                 <p>Id: <%= lp.getId()%></p>
                 <p>Nombre: <%= lp.getNombre() %></p>
                 <p>RFC: <%= lp.getRfc()%></p>
