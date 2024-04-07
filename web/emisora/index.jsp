@@ -8,7 +8,7 @@
     </head>
     <body>
         <center>
-            <h1>Menú Emisoras</h1>
+            <h1><a href="../index.jsp"><input type="button" value="Volver"></a> Menú Emisoras</h1>
             <hr>
 
             <h1>Datos de Emisora</h1>
@@ -48,7 +48,7 @@
             <h1>Eliminar Emisoras</h1>
             <p>Ingrese el Id de la Emisora a Eliminar</p>
             <form action="../SvEliminar" method="POST">
-                <p><label>Id: </label> <input type="text" name="id" required></p>
+                <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Eliminar </button>
             </form>
             <br>
@@ -57,7 +57,7 @@
             <h1>Editar Emisoras</h1>
             <p>Ingrese el Id de la Emisora a Editar</p>
             <form action="../SvEditar" method="GET">
-                <p><label>Id: </label> <input type="text" name="id" required></p>
+                <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Editar </button>
             </form>
             <br>

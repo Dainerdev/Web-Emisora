@@ -7,7 +7,21 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <a href="emisora/index.jsp">menu emisora</a>
+        <center>
+            <h1>Menú Principal</h1>
+            <hr>
+
+            <table>
+                <tr>
+                    <td><a href="emisora/index.jsp">Menú Emisora</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Menú Productora</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Menú Consorcio</a></td>
+                </tr>
+            </table>
+        </center>
     </body>
 </html>

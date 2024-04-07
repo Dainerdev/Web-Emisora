@@ -14,7 +14,8 @@
             <p><label>Nombre: </label> <input type="text" name="nombre" value="<%= emi.getNombre() %>"></p>
             <p><label>Frecuencia: </label> <input type="text" name="frec" value="<%= emi.getFrecuencia()%>"></p>
             <p><label>Transmisión: </label> <input type="text" name="trans" value="<%= emi.getTransmision()%>"></p>
-            <button type="submit"> Editar </button>                
+            <button type="submit"> Editar </button>
+            <a href="index.jsp"><input type="button" value="Cancelar"></a>
         </form>
     </body>
 </html>
