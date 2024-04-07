@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Emisoras Web - Dainer Florian</title>
     </head>
     <body>
         <center>
@@ -19,7 +19,13 @@
                     <td><a href="productora/index.jsp">Menú Productora</a></td>
                 </tr>
                 <tr>
-                    <td><a href="">Menú Consorcio</a></td>
+                    <td><a href="consorcio/index.jsp">Menú Consorcio</a></td>
+                </tr>
+                <tr>
+                    <td><a href="programa/index.jsp">Menú Programa</a></td>
+                </tr>
+                <tr>
+                    <td><a href="progResumen/index.jsp">Menú Programa Resumen</a></td>
                 </tr>
             </table>
         </center>

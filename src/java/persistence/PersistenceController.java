@@ -1,8 +1,11 @@
 
 package persistence;
 
+import entities.Consorcio;
 import entities.Emisora;
 import entities.Productora;
+import entities.ProgResumen;
+import entities.Programa;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,6 +16,8 @@ public class PersistenceController {
     ConsorcioJpaController consJpa = new ConsorcioJpaController();
     EmisoraJpaController emiJpa = new EmisoraJpaController();
     ProductoraJpaController produJpa = new ProductoraJpaController();
+    ProgramaJpaController progJpa = new ProgramaJpaController();
+    ProgResumenJpaController resumJpa = new ProgResumenJpaController();
 
     // PersistenceController Para Emisora
     // Create Emisora
@@ -80,8 +85,80 @@ public class PersistenceController {
         } catch (Exception ex) {
             Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
         }
-;
+
     }
+    
+    // PersistenceController Para Consorcio
+
+    public void crearConsorcio(Consorcio cons) {
+        consJpa.create(cons);
+    }
+
+    public List<Consorcio> listarConsorcio() {
+        return consJpa.findConsorcioEntities();
+    }
+
+    public void eliminarConsorcio(int id) {
+        try {
+            consJpa.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public Consorcio buscarConsorcio(int id) {
+        return consJpa.findConsorcio(id);
+    }
+
+    public void editarEmisora(Consorcio cons) {
+        try {
+            consJpa.edit(cons);
+        } catch (Exception ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    // PersistenceController Para Consorcio
+    
+    public void crearPrograma(Programa prog) {
+        progJpa.create(prog);
+    }
+
+    public List<Programa> listarPrograma() {
+        return progJpa.findProgramaEntities();
+    }
+
+    public void eliminarPrograma(int id) {
+        try {
+            progJpa.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public Programa buscarPrograma(int id) {
+        return progJpa.findPrograma(id);
+    }
+
+    public void editarPrograma(Programa prog) {
+        try {
+            progJpa.edit(prog);
+        } catch (Exception ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void crearProgResumen(ProgResumen progResum) {
+        resumJpa.create(progResum);
+    }
+
+    public List<ProgResumen> listarProgResumen() {
+        return resumJpa.findProgResumenEntities();
+    }
+    
+    
+    
+    
     
     
     
