@@ -155,6 +155,26 @@ public class PersistenceController {
     public List<ProgResumen> listarProgResumen() {
         return resumJpa.findProgResumenEntities();
     }
+
+    public void eliminarProgResumen(int id) {
+        try {
+            resumJpa.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public ProgResumen buscarProgResumen(int id) {
+        return resumJpa.findProgResumen(id);
+    }
+
+    public void editarProgResumen(ProgResumen progRes) {
+        try {
+            resumJpa.edit(progRes);
+        } catch (Exception ex) {
+            Logger.getLogger(PersistenceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
     
     

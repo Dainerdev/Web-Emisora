@@ -101,6 +101,18 @@ public class Controller {
     public List<ProgResumen> listarProgResumen() {
         return perCon.listarProgResumen();
     }
+
+    public void eliminarProgResumen(int id) {
+        perCon.eliminarProgResumen(id);
+    }
+
+    public ProgResumen buscarProgResumen(int id) {
+        return perCon.buscarProgResumen(id);
+    }
+
+    public void editarProgResumen(ProgResumen progRes) {
+        perCon.editarProgResumen(progRes);
+    }
     
     
     

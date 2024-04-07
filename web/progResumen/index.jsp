@@ -40,26 +40,26 @@
             <h1>Lista de Programas Resumen</h1>
             <p>Para ver la lista de Programas, haga click en el siguiente botón</p>
             <form action="../SvProgResumen" method="GET">
-                <button type="submit"> Mostrar Programas Resumen    </button>
+                <button type="submit"> Mostrar Programas Resumen </button>
             </form>
             <br>
             <hr>
             
-<!--            <h1>Eliminar Programas</h1>
-            <p>Ingrese el Id del Programa a Eliminar</p>
-            <form action="../SvEliminarProg" method="POST">
+            <h1>Eliminar Programas Resumen</h1>
+            <p>Ingrese el Id del Programa Resumen a Eliminar</p>
+            <form action="../SvEliminarPres" method="POST">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Eliminar </button>
             </form>
             <br>
-            <hr>-->
+            <hr>
 
-<!--            <h1>Editar Programas</h1>
-            <p>Ingrese el Id del Programa a Editar</p>
-            <form action="../SvEditarProg" method="GET">
+            <h1>Editar Programas Resumen</h1>
+            <p>Ingrese el Id del Programa Resumen a Editar</p>
+            <form action="../SvEditarPres" method="GET">
                 <p><label><label style="color: red;">*</label> Id: </label> <input type="text" name="id" required></p>
                 <button type="submit"> Editar </button>
-            </form>-->
+            </form>
             <br>
             <hr>
         </center>
